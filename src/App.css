@@ -65,3 +65,9 @@
   transform: scale(0.8);
   box-shadow: 0 0 4px black;
 }
+.todo-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
