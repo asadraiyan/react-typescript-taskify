@@ -27,7 +27,7 @@
 .input-field {
   display: flex;
   position: relative;
-  width: 90%;
+  width: 95%;
   align-items: center;
 }
 .input-task {
@@ -65,19 +65,41 @@
   transform: scale(0.8);
   box-shadow: 0 0 4px black;
 }
-.todo-container {
+.main-container {
+  /* border: 2px solid black; */
   display: flex;
-  justify-content: space-evenly;
-  width: 90%;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+.todo-container {
+  /* border: 2px solid black; */
+  display: flex;
+  width: 49.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(50, 195, 205);
+}
+.remove {
+  background-color: rgb(235, 103, 80);
+}
+.todos-heading {
+  font-size: 30px;
+  color: white;
 }
 .todo-form {
   display: flex;
-  width: 30%;
   border-radius: 5px;
   margin-top: 15px;
   padding: 20px;
   background-color: rgb(247, 177, 46);
+  transition: 0.2s;
+}
+.todo-form:hover {
+  box-shadow: 0 0 5px, black;
+  transform: scale(1.02);
 }
 .todo-item {
   flex: 1;
