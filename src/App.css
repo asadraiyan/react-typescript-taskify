@@ -97,6 +97,7 @@
   padding: 20px;
   background-color: rgb(247, 177, 46);
   transition: 0.2s;
+  align-items: center;
 }
 .todo-form:hover {
   box-shadow: 0 0 5px, black;
@@ -122,4 +123,33 @@
 }
 .drag {
   box-shadow: 0 0 18px black;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .todo-container {
+    width: 99%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .input-task {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .todos-heading {
+    font-size: 25px;
+  }
+  .todo-item {
+    font-size: 18px;
+  }
+  .title {
+    margin-top: 5rem;
+  }
+  .todo-form {
+    padding-left: 10px;
+  }
 }
