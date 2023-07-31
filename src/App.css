@@ -13,6 +13,7 @@
   align-items: center;
   background-color: #2f74c0;
   font-family: "Neucha", cursive;
+  overflow: auto;
 }
 .title {
   font-size: 40px;
@@ -112,4 +113,13 @@
   margin-left: 10px;
   font-size: 22px;
   cursor: pointer;
+}
+.dragactive {
+  background-color: rgb(0, 221, 236);
+}
+.dragcomplete {
+  background-color: rgb(255, 38, 0);
+}
+.drag {
+  box-shadow: 0 0 18px black;
 }
